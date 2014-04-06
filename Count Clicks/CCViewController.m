@@ -19,7 +19,7 @@
 - (IBAction)incrementClickCount:(id)sender
 {
     self.count ++;
-    self.countLabel.text = [NSString stringWithFormat:@"%d", self.count];
+    self.countLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)self.count];
 }
 
 - (void)viewDidLoad
